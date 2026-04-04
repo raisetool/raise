@@ -10,42 +10,6 @@ rAIse evaluates your organization's readiness for AI adoption across 7 strategic
 **Live site:** `https://<your-org>.github.io/raise/`
 
 ---
-
-## How to Deploy to GitHub Pages
-
-### Option A — Simple (docs folder, no Actions needed)
-
-1. Create a new **public** GitHub repository (e.g., `raise`)
-2. Copy `index.html` into the repo root (or a `docs/` folder)
-3. Go to **Settings → Pages**
-4. Set source: `main` branch, `/ (root)` folder (or `/docs` if you placed it there)
-5. Save — GitHub Pages will publish within a minute
-
-Your site will be available at: `https://<org>.github.io/raise/`
-
-### Option B — GitHub Actions (recommended, already configured)
-
-The `.github/workflows/deploy.yml` file is included. Just:
-
-1. Push this entire folder to a new GitHub repository
-2. Go to **Settings → Pages → Source** → select **GitHub Actions**
-3. Push any change to `main` to trigger deployment
-
----
-
-## Structure
-
-```
-raise/
-├── index.html                  ← Full self-contained web app
-├── README.md
-└── .github/
-    └── workflows/
-        └── deploy.yml          ← GitHub Pages deployment workflow
-```
-
----
-
 ## Features
 
 | Tab | Description |
