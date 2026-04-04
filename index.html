@@ -923,8 +923,11 @@ function renderResults() {
   }
 
   // Pillar data for chart
-  const pillarScores = PILLARS.map(p => ({ name: p.name.split(' ')[0] + ' ' + p.name.split(' ')[1], score: pillarAvg(p.id) || 0, color: p.color }));
-
+  const pillarScores = PILLARS.map(p => ({
+  name: p.name.split(' ')[0] + ' ' + p.name.split(' ')[1],
+  score: pillarAvg(p.id) || 0,
+  color: p.color
+}));
   // Expanded prescription data
   const govOverlay = GOVERNANCE_OVERLAYS[techAnswers['T5']] || null;
   const speedRoadmap = techAnswers['T6'] ? SPEED_ROADMAPS[techAnswers['T6']] : null;
