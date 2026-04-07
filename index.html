@@ -1045,10 +1045,18 @@ function renderResults() {
     </div>
     ` : `
     <div class="card" style="border-left: 4px solid var(--ms-orange)">
-      <div class="card-title">Complete Tech Profile for Prescription</div>
+      <div class="card-title">Complete/Review Assessment</div>
+      <p style="color:var(--muted);font-size:14px;margin-top:0.5rem">Return to the assessment overview to complete/review pillar scores and get tailored recommendations.</p>
+      <div style="margin-top:1rem"><button class="btn btn-primary btn-sm" onclick="showSection('assessment')">Go to Assessment →</button></div>
+    </div>
+
+    <div class="card" style="border-left: 4px solid var(--ms-orange)">
+      <div class="card-title">Complete/Review Tech Profile</div>
       <p style="color:var(--muted);font-size:14px;margin-top:0.5rem">Answer the T1–T6 questions in the Tech Profile tab to receive your personalized technology stack recommendation.</p>
       <div style="margin-top:1rem"><button class="btn btn-primary btn-sm" onclick="showSection('techprofile')">Go to Tech Profile →</button></div>
     </div>
+    
+    
     `}
 
     ${buildExtraPrescrHTML(presc, govOverlay, speedRoadmap, isdPlays, t6Label, qMeta)}
